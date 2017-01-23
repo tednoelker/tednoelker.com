@@ -1,0 +1,17 @@
+{
+    "403":  {
+        "title":  "Forbidden",
+        "display":  "Access Denied",
+        "message":  "You do not have permission to view this resource on the server."
+    },
+    "404":  {
+        "title":  "Page Not Found",
+        "display":  "Bad Request",
+        "message":  "No file could be found at this address. Please hang up and try again."
+    },
+    "505":  {
+        "title":  "Internal Server Error",
+        "display":  "Uh-oh...",
+        "message":  "Our systems seem to be experiencing unexpected technical difficulties at the moment. Please accept our apologies and try again later."
+    }
+}

@@ -1,0 +1,337 @@
+a {
+    color: #c7c7ac;
+    text-decoration: none;
+    transition: color 300ms;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.external:after {
+	content: ' ⇗';
+}
+
+h2 a {
+    color: #505050;
+}
+
+h2 a:hover {
+	color: #c7c7ac;
+	text-decoration: none;
+}
+
+a.ulink,
+p a {
+    color: #505050;
+	border-bottom: 1px dotted #c7c7ac;
+}
+
+a.ulink,
+p a:hover {
+	color: #c7c7ac;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+code {
+    background: #f8f8f8;
+	color: #505050;
+	display: inline-block;
+	font-family: monospace, serif;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 20px;
+	word-break: break-word;
+}
+
+article {
+    margin-bottom: 75px;
+}
+
+article p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+textarea, input[type=text] {
+    background: #f8f8f8;
+    border: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    outline: none;
+    padding: 5px;
+}
+
+input[type=submit] {
+    background: #c7c7ac;
+    border: 0;
+    color: #fff;
+    font: 'Helvetica Neue', Helvetica, sans-serif;
+    letter-spacing: 1px;
+    outline: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+input[type=submit]:hover {
+    background: #505050;
+}
+
+.block {
+	display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.red {
+    color: red !important;
+}
+
+.square {
+    color: #c7c7ac;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+
+
+
+.gutter::after {
+    content: '';
+    float: left;
+    height: 50px;
+    width: 100%;
+}
+
+.noted {
+    padding-bottom: 5px;
+}
+
+#nohead {
+    background-image: url('../img/noted.jpg');
+    margin-bottom: 10px;
+}
+
+.n-social {
+    float: right;
+}
+
+.n-profile {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    height: 40px;
+    padding: 6px;
+    width: 40px;
+}
+
+.n-profile path {
+    transition: fill 300ms;
+}
+
+.n-social:hover path {
+    fill: rgb(200,200,200);
+}
+
+.n-twitter path,
+.n-twitter:hover path {
+    fill: rgb(85,172,238);
+}
+
+.n-linkedin path,
+.n-linkedin:hover path {
+    fill: rgb(0,119,181);
+}
+
+.n-spotify path,
+.n-spotify:hover path {
+    fill: rgb(30,215,96);
+}
+
+.n-github path,
+.n-github:hover path {
+    fill: rgb(24,23,23);
+}
+
+.n-ted {
+    letter-spacing: 2px;
+}
+
+.n-dev {
+    color: rgb(179,187,193);
+    font-weight: 500;
+}
+
+.kicker {
+    background-color: #c7c7ac;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+    padding: 3px 10px;
+    text-transform: uppercase;
+}
+
+.headline {
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 50px;
+    margin: 0;
+}
+
+.meta {
+    color: #505050;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.image  {
+    float: left;
+    margin-right: 15px;
+}
+
+#folio {
+    clear: both;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.fb-share-button, .twitter-share-button {
+    display: inline !important;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+#comments {
+    float: right;
+    margin-top: 100px;
+}
+
+.comment-notes {
+    color: #505050;
+}
+
+#respond {
+    border-top: 3px solid #505050;
+    margin-top: 75px;
+    padding-top: 25px;
+}
+
+@media (max-width: 600px) {
+    .n-header {
+        background-color: rgb(230,230,214);
+        height: 150px;
+        margin-bottom: 40px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .n-h1 {
+        font-size: 100px;
+        left: 7%;
+        line-height: 1;
+        margin: 88px 0 0;
+        position: relative;
+        text-transform: lowercase;
+    }
+
+    .n-breadcrumb {
+        color: rgb(255,255,255);
+    }
+}
+
+@media (min-width: 601px) {
+    .n-header {
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+
+    .n-h1 {
+        color: #c7c7ac;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+        font-size: 100px;
+        font-weight: 100;
+    	letter-spacing: 7px;
+    }
+
+    .n-breadcrumb:hover {
+        color: #505050;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 699px) {
+    .noted {
+        border-bottom: 3px solid #f8f8f8;
+        margin-bottom: 50px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+
+    #nohead {
+        background-repeat: no-repeat;
+        background-position-y: 50%;
+        background-size: 100%;
+        float: left;
+        height: 110vw;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1099px) and (min-width: 700px) {
+    .noted {
+        border-top: 3px solid #f8f8f8;
+        float: left;
+        margin-bottom: 50px;
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    #nohead {
+        background-position-y: -30px;
+        background-size: 110%;
+        float: left;
+        height: 200px;
+        margin-right: 50px;
+        width: 200px;
+    }
+}
+
+
+@media (min-width: 1100px) {
+    .noted {
+        border-bottom: 3px solid #505050;
+        float: right;
+        margin: 0 0 50px 50px;
+        width: 400px;
+    }
+
+    #nohead {
+        height: 600px;
+        width: 400px;
+    }
+}

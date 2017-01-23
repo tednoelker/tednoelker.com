@@ -1,0 +1,201 @@
+/* About */
+
+#about body {
+    overflow-x: scroll;
+}
+
+#about::-webkit-scrollbar {
+    background: transparent;
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+#a-tree {
+    height: 100vh;
+    float: left;
+    width: 100%;
+}
+
+#a-ted,
+#a-det {
+    box-sizing: border-box;
+    display: block;
+    font-family: 'Helvetica Neue';
+    font-size: 4.2em;
+    height: 3em;
+    left: 15%;
+    line-height: 3em;
+    position: fixed;
+    top: 20%;
+    width: 3em;
+}
+
+#a-ted {
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+    font-weight: 900;
+    mix-blend-mode: lighten;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 99;
+}
+
+#a-det {
+    background-color: rgba(199,199,172,0.5);
+    mix-blend-mode: darken;
+    z-index: 97;
+}
+
+#a-back {
+    background-image: url('../img/tednoelker.jpg');
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    left: 0;
+    isolation: isolate;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#a-noelker {
+    color: rgb(255,255,255);
+    font-size: 1.8em;
+    left: 15%;
+    letter-spacing: 0.45em;
+    line-height: 1;
+    margin-top: 7.6em;
+    position: fixed;
+    text-shadow: 2px 1px 5px rgba(100,100,100,0.2);
+    text-transform: uppercase;
+    top: 20%;
+    width: 7em;
+}
+
+#a-line {
+    background-color: rgb(255,255,255);
+    color: rgb(110,113,115);
+    font-size: 1.8em;
+    font-weight: 600;
+    padding: 10px 20px;
+    position: absolute;
+}
+
+@keyframes underline {
+    0% {
+        transform: scaleX(1) translateX(0)
+    }
+    20% {
+        transform: scaleX(1.3) translateX(100%);
+    }
+    45% {
+        transform: scaleX(0.8) translateX(-10%);
+    }
+    60% {
+        transform: scaleX(0.6) translateX(80%);
+    }
+    80% {
+        transform: scaleX(1.1) translateX(15%);
+    }
+    100% {
+        transform: scaleX(1) translateX(120%);
+    }
+}
+
+#a-bout {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    left: 0;
+    isolation: isolate;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 30;
+}
+
+#a-bio {
+    color: rgb(110,113,115);
+    font-size: 1em;
+    font-weight: 200;
+    left: 15%;
+    letter-spacing: 0.05em;
+    line-height: 1.4em;
+    position: relative;
+    word-spacing: 0.2em;
+}
+
+#a-bio:after {
+    background-color: rgb(230,230,214);
+    content: '';
+    display: inline-block;
+    height: 10px;
+    margin-left: 7px;
+    width: 10px;
+}
+
+@media (max-width: 750px) {
+    #a-tree {
+        font-size: 12px;
+        overflow: hidden;
+    }
+
+    #a-line {
+        bottom: 0;
+        box-sizing: border-box;
+        left: 0;
+        width: 100%;
+    }
+
+    #a-bout {
+        background-image: linear-gradient(to bottom, rgb(230,230,214) 25%, rgb(255,255,255));
+    }
+
+    #a-bio {
+        margin: 0;
+        top: 50%;
+        width: 70%;
+    }
+
+    #a-bio:before {
+        content: ' ';
+        float: left;
+        height: 13em;
+        width: 14em;
+    }
+}
+
+@media (min-width: 751px) {
+    #a-line {
+        bottom: 13%;
+        right: 6%;
+    }
+
+    #a-line:after {
+        animation: underline 30s infinite linear alternate;
+        background-color: rgb(230,230,214);
+        bottom: -20px;
+        content: '';
+        display: block;
+        height: 10px;
+        left: 0;
+        position: absolute;
+        width: 50%;
+    }
+
+    #a-bout {
+        background-image: linear-gradient(to right, rgba(199,199,172,0) calc(2% + 50px), rgb(255,255,255) calc(2% + 50px), rgb(255,255,255) calc(98% - 50px), rgba(199,199,172,0) calc(98% - 50px));
+    }
+
+    #a-bio {
+        margin: 0 0 0 14em;
+        top: 24%;
+        top: calc(24% + 1vw);
+        width: 50%;
+    }
+}
