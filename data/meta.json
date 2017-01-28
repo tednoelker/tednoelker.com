@@ -1,5 +1,22 @@
 {
     "description":  "A journalist by practice, Ted's skills span digital media, web development, marketing, social media, brand management, web and graphic design, leadership, resource management and much more.",
     "keywords":  "Ted Noelker, journalist, web developer, digital designer, leader, marketer, social media, strategic communications, public relations",
-    "image":  "tednoelker.jpg"
+    "image":  "tednoelker.jpg",
+    "errors":  {
+        "403":  {
+            "title":  "Forbidden",
+            "display":  "Access Denied",
+            "message":  "You do not have permission to view this resource on the server."
+        },
+        "404":  {
+            "title":  "Page Not Found",
+            "display":  "Bad Request",
+            "message":  "No file could be found at this address. Please hang up and try again."
+        },
+        "500":  {
+            "title":  "Internal Server Error",
+            "display":  "Uh-oh...",
+            "message":  "Our systems seem to be experiencing unexpected technical difficulties at the moment. Please accept our apologies and try again later."
+        }
+    }
 }

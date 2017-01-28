@@ -4,7 +4,7 @@
 
         // Site settings
         public $cache = false;
-        public $version = '3.0.1';
+        public $version = '3.0.2';
 
 
         // Store server path params
@@ -50,14 +50,33 @@
 
                 $this->meta = json_decode(file_get_contents($this->server . '/data/meta.json'), true);
 
-                if ( !file_exists($composer) ) {
-                    header('HTTP/1.0 404 Not Found');
-                    $this->request = 'error';
+                parse_str($_SERVER['QUERY_STRING'], $query);
+                $error = $query['error'];
+
+                if ( isset($error) && isset($this->meta['errors'][$error]) ) {
+                    $this->throwError($error);
+                } else if ( !file_exists($composer) ) {
+                    $this->throwError('404');
                 }
 
                 $this->cachePage($cache, '/assets/php/document.php');
 
             }
+
+        }
+
+
+        // Load php and cache html output
+        public function throwError($error) {
+
+            if ($error == '404') {
+                header('HTTP/1.0 404 Not Found');
+            }
+
+            $this->error = $this->meta['errors'][$error];
+            $this->error['number'] = $error;
+
+            $this->request = 'error';
 
         }
 
