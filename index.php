@@ -23,7 +23,8 @@
 
             $replace = array($path, '/', 'index', '.html', '.php');
             $uri = str_replace($replace, '', $_SERVER['REQUEST_URI']);
-            $request = rtrim($uri, '/');
+            $page = rtrim($uri, '/');
+            $request = strtolower($page);
 
             $this->routePage($request);
 
