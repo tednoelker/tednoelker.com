@@ -1,4 +1,13 @@
-/* About */
+a.rv-link {
+    color: rgb(110,113,115);
+    font-weight: 500;
+    padding-bottom: 2px;
+    transition: color 200ms;
+}
+
+a.rv-link:hover {
+    color: rgb(221,37,37);
+}
 
 #about body {
     overflow-x: scroll;
@@ -160,14 +169,19 @@
     }
 
     #a-bout {
-        background-image: linear-gradient(to bottom, rgba(230,230,214,0.95) 10%, rgb(255,255,255));
+        background-image: linear-gradient(120deg, rgb(110,113,115) 75%, rgb(100,100,100));
     }
 
     #a-bio {
-        font-weight: 400;
+        color: rgb(255,255,255);
+        font-size: 15px;
         margin: 0;
         top: 40%;
         width: 70%;
+    }
+
+    a.rv-link {
+        color: rgb(230,230,214);
     }
 }
 
