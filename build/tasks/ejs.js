@@ -1,9 +1,11 @@
+// Dependencies
+const { config, util } = require('../config.js');
 const ejs = require('gulp-ejs');
-const error = require('../utils/error.js');
 const fs = require('fs');
 const gulp = require('gulp');
 const rename = require('gulp-rename');
 
+// Parse json files in pages directory
 function getPages(config, pages = []) {
   fs.readdirSync(config.get('pages')).forEach(fileName => {
     const pageName = fileName.replace('.json', '');
@@ -18,12 +20,13 @@ function getPages(config, pages = []) {
         content: data.content
       });
     } else {
-      error('Render error', `Could not locate template file for ${fileName}`);
+      util.error('Render error', `Could not locate template file for ${fileName}`);
     }
   });
   return pages;
 }
 
+// Resolve page meta data with site defaults
 function mergeKeys(pageMeta, siteMeta) {
   if (typeof pageMeta === 'object' && typeof siteMeta === 'object') {
     return Object.assign({}, siteMeta, pageMeta);
@@ -31,15 +34,16 @@ function mergeKeys(pageMeta, siteMeta) {
   return pageMeta;
 }
 
-module.exports = (config, siteData) => {
-  return getPages(config).forEach(file => {
+// Hydrate templates with page data
+function task(end) {
+  getPages(config).forEach(file => {
     gulp.src(`${config.get('templates')}/${file.template}.ejs`)
       .pipe(
         ejs(
           {
-            meta: mergeKeys(file.meta, siteData.meta) || {},
+            meta: mergeKeys(file.meta, util.data.meta) || {},
             page: file.content || {},
-            site: siteData || {}
+            site: util.data || {}
           },
           {
             async: true,
@@ -60,4 +64,11 @@ module.exports = (config, siteData) => {
         gulp.dest(config.cwd)
       )
   });
+  return end();
 }
+
+// Gulp log name
+task.displayName = 'ejs';
+
+// Export task
+module.exports = task;

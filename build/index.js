@@ -1,10 +1,15 @@
+// Dependencies
 const gulp = require('gulp');
 
-const config = require('./utils/config.js');
-const data = require('./utils/data.js');
+// Tasks
 const ejs = require('./tasks/ejs.js');
+const serve = require('./tasks/serve.js');
 
-gulp.task('default', (done) => {
-  ejs(config, data());
-  done();
-});
+// Runners
+const build = gulp.parallel(ejs);
+const dev = gulp.series(build, serve);
+
+// Exports
+gulp.task('default', build);
+gulp.task('dev', dev);
+gulp.task('serve', serve);

@@ -11,7 +11,8 @@
   "main": "build/index.js",
   "scripts": {
     "build": "gulp --gulpfile=build/index.js",
-    "dev": "gulp --gulpfile=build/index.js && serve"
+    "dev": "gulp dev --gulpfile=build/index.js",
+    "serve": "gulp serve --gulpfile=build/index.js"
   },
   "dependencies": {
     "gulp": "^4.0.0",
