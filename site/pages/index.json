@@ -1,9 +1,9 @@
 {
   "template": "default",
   "meta": {
-    "title": ""
+    "title": "Home"
   },
   "content": {
-    "key": ""
+    "key": "testing 123"
   }
 }

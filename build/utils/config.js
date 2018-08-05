@@ -5,11 +5,15 @@ let vars = {
   assets: '/assets',
   data: '/data',
   pages: '/pages',
-  templates: '/templates'
+  templates: '/templates',
+  meta: 'meta.json'
 }
 
 let methods = {
   get: (key, config = vars) => {
+    if (typeof config[key] === 'undefined') {
+      return console.error(`Invalid config key: "${key}"`);
+    }
     return config.cwd + config.src + config[key];
   }
 }
