@@ -9,7 +9,8 @@ const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 
 // Hydrate templates with page data
-function task(end) {
+function build(end) {
+  console.log('SCSS');
   return gulp.src(`${config.get('assets')}/scss/!(_*)*.scss`)
     .pipe(
       cleanCSS()
@@ -25,7 +26,6 @@ function task(end) {
     .pipe(
       rename({
         dirname: `${config.dist}/${config.assets}/css`,
-        //basename: file.name,
         extname: '.css'
       })
     )
@@ -34,8 +34,16 @@ function task(end) {
     );
 }
 
+// Watch for changes
+function watch(end) {
+  console.log(`${config.get('assets')}/scss/**/*.scss`);
+  return gulp.watch(`${config.get('assets')}/scss/**/*.scss`, build);
+}
+
 // Gulp log name
-task.displayName = 'scss';
+build.displayName = 'scss';
+watch.displayName = 'watch:scss';
 
 // Export task
-module.exports = task;
+exports.build = build;
+exports.watch = watch;

@@ -35,7 +35,7 @@ function mergeKeys(pageMeta, siteMeta) {
 }
 
 // Hydrate templates with page data
-function task(end) {
+function build(end) {
   getPages(config).forEach(file => {
     gulp.src(`${config.get('templates')}/${file.template}.ejs`)
       .pipe(
@@ -67,8 +67,15 @@ function task(end) {
   return end();
 }
 
-// Gulp log name
-task.displayName = 'ejs';
+// Watch all ejs and data files
+function watch(end) {
+  return gulp.watch([`${config.get('templates')}/**/*.ejs`, `${config.get('data')}/**/*.json`], build);
+}
 
-// Export task
-module.exports = task;
+// Gulp log name
+build.displayName = 'ejs';
+watch.displayName = 'watch:ejs';
+
+// Export tasks
+exports.build = build;
+exports.watch = watch;

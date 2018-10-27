@@ -7,8 +7,9 @@ const scss = require('./tasks/scss.js');
 const serve = require('./tasks/serve.js');
 
 // Runners
-const build = gulp.parallel(scss, ejs);
-const dev = gulp.series(build, serve);
+const build = gulp.parallel(scss.build, ejs.build);
+const watch = gulp.parallel(scss.watch, ejs.watch);
+const dev = gulp.series(build, serve, watch);
 
 // Exports
 gulp.task('default', build);
