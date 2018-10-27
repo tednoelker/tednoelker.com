@@ -3,10 +3,11 @@ const gulp = require('gulp');
 
 // Tasks
 const ejs = require('./tasks/ejs.js');
+const scss = require('./tasks/scss.js');
 const serve = require('./tasks/serve.js');
 
 // Runners
-const build = gulp.parallel(ejs);
+const build = gulp.parallel(scss, ejs);
 const dev = gulp.series(build, serve);
 
 // Exports
