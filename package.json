@@ -26,6 +26,6 @@
     "npm": "^6.4.1"
   },
   "devDependencies": {
-    "serve": "^9.4.0"
+    "live-server": "^1.2.0"
   }
 }

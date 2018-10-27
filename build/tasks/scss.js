@@ -10,7 +10,6 @@ const postcss = require('gulp-postcss');
 
 // Hydrate templates with page data
 function build(end) {
-  console.log('SCSS');
   return gulp.src(`${config.get('assets')}/scss/!(_*)*.scss`)
     .pipe(
       cleanCSS()
@@ -36,7 +35,6 @@ function build(end) {
 
 // Watch for changes
 function watch(end) {
-  console.log(`${config.get('assets')}/scss/**/*.scss`);
   return gulp.watch(`${config.get('assets')}/scss/**/*.scss`, build);
 }
 

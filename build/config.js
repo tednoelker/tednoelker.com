@@ -13,7 +13,7 @@ let paths = {
   pages: '/pages',
   templates: '/templates',
   meta: 'meta.json'
-}
+};
 
 // Construct paths
 let methods = {
@@ -23,21 +23,23 @@ let methods = {
     }
     return paths.cwd + paths.src + paths[key];
   }
-}
+};
 
 // Server settings
 let server = {
   port: 5000,
-  settings: {
-    public: `../${paths.dist}`
-  }
-}
+  host: 'localhost',
+  root: paths.cwd + paths.dist,
+  mount: [],
+  open: true,
+  logLevel: 0
+};
 
 // Util libs
 let utils = {
   data: data(methods.get('data')),
   error
-}
+};
 
 // Export objects
 exports.config = Object.assign(paths, methods);
