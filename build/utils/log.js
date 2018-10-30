@@ -6,7 +6,7 @@ module.exports = (message, color, emphasis) => {
     message = chalk[color](message);
 
     if (typeof emphasis === 'string') {
-      message += ' ' + chalk.underline[color](bold);
+      message += ' ' + chalk.underline[color](emphasis);
     }
   }
   return console.log(message);

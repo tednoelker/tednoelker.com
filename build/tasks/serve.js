@@ -5,7 +5,9 @@ const liveServer = require('live-server');
 // Init local server
 function task(end) {
   liveServer.start(server);
-  util.log(`Running at`, 'yellow', `${server.host}:${server.port}`);
+  util.log(`
+Running at`, 'yellow', `${server.host}:${server.port}
+`);
   return end();
 }
 

@@ -3,6 +3,7 @@ const { config, util } = require('../config.js');
 const ejs = require('gulp-ejs');
 const fs = require('fs');
 const gulp = require('gulp');
+const htmlmin = require('gulp-htmlmin');
 const rename = require('gulp-rename');
 
 // Parse json files in pages directory
@@ -37,7 +38,6 @@ function mergeKeys(pageMeta, siteMeta) {
 // Hydrate templates with page data
 function build(end) {
   getPages(config).forEach(file => {
-    console.log(file.name);
     gulp.src(`${config.get('templates')}/${file.template}.ejs`)
       .pipe(
         ejs(
@@ -47,11 +47,17 @@ function build(end) {
             site: util.data || {}
           },
           {
-            async: true,
-            rmWhitespace: true
+            async: false,
+            rmWhitespace: false
           }
-        ).on('error', (message) => {
-          util.error(message);
+        ).on('error', (error) => {
+          util.error('ERROR: EJS', error.message);
+          end();
+        })
+      )
+      .pipe(
+        htmlmin({
+          collapseWhitespace: true
         })
       )
       .pipe(
