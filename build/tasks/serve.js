@@ -1,11 +1,11 @@
 // Dependencies
-const { config, server } = require('../config.js')
+const { config, server, util } = require('../config.js')
 const liveServer = require('live-server');
 
 // Init local server
 function task(end) {
   liveServer.start(server);
-  console.log(`Running at ${server.host}:${server.port}`);
+  util.log(`Running at`, 'yellow', `${server.host}:${server.port}`);
   return end();
 }
 

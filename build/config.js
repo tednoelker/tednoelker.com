@@ -1,6 +1,7 @@
 // Dependencies
 const data = require('./utils/data.js');
 const error = require('./utils/error.js');
+const log = require('./utils/log.js');
 const path = require('path');
 
 // Browser support
@@ -46,7 +47,8 @@ let server = {
 // Util libs
 let utils = {
   data: data(methods.get('data')),
-  error
+  error,
+  log
 };
 
 // Export objects

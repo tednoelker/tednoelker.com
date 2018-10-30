@@ -37,6 +37,7 @@ function mergeKeys(pageMeta, siteMeta) {
 // Hydrate templates with page data
 function build(end) {
   getPages(config).forEach(file => {
+    console.log(file.name);
     gulp.src(`${config.get('templates')}/${file.template}.ejs`)
       .pipe(
         ejs(
@@ -50,7 +51,7 @@ function build(end) {
             rmWhitespace: true
           }
         ).on('error', (message) => {
-          error(message);
+          util.error(message);
         })
       )
       .pipe(
