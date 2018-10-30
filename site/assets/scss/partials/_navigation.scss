@@ -21,74 +21,12 @@
     text-transform: uppercase;
     transition: background 200ms ease-out;
 
+    &:focus,
     &:hover {
-        background-color: darken($color-black, 100%);
+      background-color: darken($color-black, 100%);
+      outline: 0;
     }
+
   } //.navigation__primary
 
 } //.navigation
-
-.contact {
-    color: $color-white;
-    margin-right: 25px;
-}
-
-.profile {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: 18px 18px;
-    display: inline-block;
-    float: left;
-    height: 40px;
-    transition: background 200ms ease-out;
-    width: 40px;
-}
-
-.twitter {
-    background-image: url($image-path + '/icons/twitter.svg');
-
-    &:hover {
-        background-color: rgb(85,172,238);
-    }
-}
-
-.linkedin {
-    background-image: url($image-path + '/icons/linkedin.svg');
-
-    &:hover {
-        background-color: rgb(0,119,181);
-    }
-}
-
-.spotify {
-    background-image: url($image-path + '/icons/spotify.svg');
-
-    &:hover {
-        background-color: rgb(30,215,96);
-    }
-}
-
-.github {
-    background-image: url($image-path + '/icons/github.svg');
-
-    &:hover {
-        background-color: rgb(24,23,23);
-    }
-}
-
-.email {
-  @include font('default');
-  box-sizing: border-box;
-  color: $color-white;
-  cursor: copy;
-  float: left;
-  font-weight: 100;
-  letter-spacing: 2px;
-  padding: 12px;
-  user-select: initial;
-
-  &::selection {
-      background: transparent;
-      color: #f5f51f;
-  }
-}

@@ -37,12 +37,14 @@
 
 }
 
-@mixin social-icon($name) {
-  .#{$name} {
+@mixin social-icon($preface, $name) {
+  .#{$preface}#{$name} {
     background-image: url('#{$image-path}/icons/#{$name}.svg');
 
+    &:focus,
     &:hover {
-        background-color: map-get($social-icons, $name);
+        background-color: map-get($social, $name);
+        outline: 0;
     }
   }
 }
