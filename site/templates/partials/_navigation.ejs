@@ -1,37 +1,24 @@
 <nav>
 
   <ul class="navigation">
-      <li class="navigation__item">
-          <a class="navigation__primary" href="/">About</a>
-      </li>
-    <li class="navigation__item">
-      <a class="navigation__primary" href="/resume">Résumé</a>
-    </li>
-    <li class="navigation__item">
-      <a class="navigation__primary" href="/portfolio">Portfolio</a>
-    </li>
-    <li class="navigation__item">
-      <a class="navigation__primary" href="/notepad/">Notepad</a>
-    </li>
 
-    <ul class="navigation__item  u-float-right">
+    <% site.navigation.primary.forEach((link) => { %>
       <li class="navigation__item">
-        <a class="contact__email" href="mailto:ted@noelker.info">ted@noelker.info</a>
+        <a class="navigation__primary" href="<%= link.url %>"><%= link.title %></a>
       </li>
-      <li class="navigation__item">
-        <a class="contact__icon  u-github u-accessible-text" href="https://github.com/tednoelker" rel="nofollow" target="_blank">GitHub</a>
-      </li>
-      <li class="navigation__item">
-        <a class="contact__icon  u-twitter u-accessible-text" href="https://twitter.com/tednoelker" rel="nofollow" target="_blank">Twitter</a>
-      </li>
-      <li class="navigation__item">
-        <a class="contact__icon  u-linkedin u-accessible-text" href="http://www.linkedin.com/in/tednoelker" rel="nofollow" target="_blank">LinkedIn</a>
-      </li>
-      <li class="navigation__item">
-        <a class="contact__icon  u-spotify u-accessible-text" href="https://open.spotify.com/user/121569357/playlist/1kvCRSlI9JnRFiTdRVKm38" rel="nofollow" target="_blank">Spotify</a>
-      </li>
-    </ul>
+    <% }); %>
 
-  </ul>
+    <ul class="navigation__item  u-float-right u-margin-right-20">
+      <li class="navigation__item">
+        <a class="contact__email" href="mailto:<%= meta.email %>"><%= meta.email %></a>
+      </li>
+      <% site.navigation.contact.forEach((link) => { %>
+        <li class="navigation__item">
+          <a class="contact__icon  u-<%= link.title.toLowerCase() %> u-accessible-text" href="<%= link.url %>" rel="nofollow" target="_blank"><%= link.title %></a>
+        </li>
+      <% }); %>
+    </ul><!-- /.navigation__item -->
+
+  </ul><!-- /.navigation -->
 
 </nav>

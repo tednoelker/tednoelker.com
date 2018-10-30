@@ -7,6 +7,7 @@
     font-weight: 100;
     letter-spacing: 2px;
     padding: 12px;
+    transition: background 200ms ease-out;
     user-select: initial;
 
     &:focus {
@@ -19,7 +20,7 @@
         outline: 0;
     }
 
-  }
+  } //.contact__email
 
   &__icon {
       background-position: 50% 50%;
@@ -30,6 +31,6 @@
       height: 40px;
       transition: background 200ms ease-out;
       width: 40px;
-  }
+  } //.contact__icon
 
-}
+} //.contact
