@@ -36,3 +36,13 @@
   }
 
 }
+
+@mixin social-icon($name) {
+  .#{$name} {
+    background-image: url('#{$image-path}/icons/#{$name}.svg');
+
+    &:hover {
+        background-color: map-get($social-icons, $name);
+    }
+  }
+}
