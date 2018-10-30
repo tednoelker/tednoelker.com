@@ -12,12 +12,17 @@ const postcss = require('gulp-postcss');
 function build(end) {
   return gulp.src(`${config.get('assets')}/scss/!(_*)*.scss`)
     .pipe(
+      sass
+        .sync()
+        .on('error', sass.logError)
+    )
+    .pipe(
       cleanCSS()
     )
     .pipe(
       postcss([
         autoprefixer({
-          browsers: ['> 0.5% in US', 'last 2 versions', 'not ie < 11', 'Firefox ESR'],
+          browsers: config.browserlist,
           cascade: false
         })
       ])

@@ -1,0 +1,38 @@
+@mixin font($family: '', $size: '', $weight: '') {
+
+  @if $family == 'default' or $family == 'Helvetica' {
+    $family: $font-helvetica;
+  }
+  @if $family == 'Hind' {
+    $family: $font-hind;
+  }
+
+  // e.g. @include font('Hind', 400);
+  @if type-of($size) == 'number' and unitless($size) {
+    $weight: $size;
+    $size: '';
+  }
+
+  // e.g. @include font(16px);
+  @if type-of($family) == 'number' and not unitless($family) {
+    $size: $family;
+    $family: '';
+  }
+
+  // e.g. @include font(400);
+  @if type-of($family) == 'number' and unitless($family) {
+    $weight: $family;
+    $family: '';
+  }
+
+  @if $family != '' {
+    font-family: $family;
+  }
+  @if $size != '' {
+    font-size: $size;
+  }
+  @if $weight != '' {
+    font-weight: $weight;
+  }
+
+}

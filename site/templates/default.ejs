@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title><%= meta.title %></title>
-    </head>
-    <body>
-        <h1>It rendered!</h1>
-        <p><%= page.key %></p>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <title><%= meta.title %></title>
+    <link rel="stylesheet" href="/assets/css/global.css">
+  </head>
+  <body>
+    <%- include('partials/_navigation.ejs'); %>
+  </body>
 </html>
