@@ -1,6 +1,65 @@
+.hamburger {
+  left: 15px;
+  position: fixed;
+  top: 15px;
+  transition: background 200ms ease-out;
+  z-index: 3;
+
+  @include breakpoint(lg) {
+    display: none;
+  }
+
+  &:focus {
+    background-color: darken($color-black, 100%);
+    outline: 0;
+  }
+
+  &__bun {
+    stroke: $color-white;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  &__bun--bottom {
+    transform-origin: 3px;
+
+    .is-open & {
+      transform: rotate(-45deg);
+    }
+
+  }
+
+  &__bun--middle {
+
+    .is-open & {
+      opacity: 0;
+      transform: translateX(90%);
+    }
+
+  }
+
+  &__bun--top {
+    transform-origin: 3px;
+
+    .is-open & {
+      transform: rotate(45deg);
+    }
+
+  }
+
+  &__icon {
+    height: 22px;
+    margin: 10px;
+    width: 28px;
+  }
+
+}
+
 .navigation {
   background-color: $color-black;
   bottom: 0;
+  display: flex;
   float: left;
   left: 0;
   overflow: hidden;
@@ -9,12 +68,11 @@
   width: 100%;
 
   @include breakpoint(lg down) {
-    display: none;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 80px;
+    width: 280px;
   }
-
-  &__item {
-    float: left;
-  } //.navigation__item
 
   &__primary {
     @include font('Hind', 600);
@@ -24,6 +82,12 @@
     padding: 12px 25px;
     text-transform: uppercase;
     transition: background 200ms ease-out;
+
+    @include breakpoint(lg down) {
+      padding-bottom: 16px;
+      padding-top: 16px;
+      width: 100%;
+    }
 
     &:focus,
     &:hover {

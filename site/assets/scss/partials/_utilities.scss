@@ -5,16 +5,12 @@
   white-space: nowrap;
 }
 
-.u-float-right {
-  float: right;
-}
-
 @each $social-icon in ('github', 'linkedin', 'spotify', 'twitter') {
     @include social-icon('u-', $social-icon);
 }
 
-@each $margin in ('20') {
-    .u-margin-right-#{$margin} {
-      margin-right: #{$margin}px;
-    }
-}
+// @each $margin in ('20') {
+//     .u-margin-right-#{$margin} {
+//       margin-right: #{$margin}px;
+//     }
+// }

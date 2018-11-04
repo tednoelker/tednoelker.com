@@ -1,3 +1,8 @@
 body {
   @include font('Helvetica', 16px, 400);
 }
+
+main {
+  position: relative;
+  z-index: 2;
+}

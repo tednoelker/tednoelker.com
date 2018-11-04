@@ -1,4 +1,20 @@
 .contact {
+  display: flex;
+  flex: 1 0 auto;
+
+  @include breakpoint(lg) {
+    justify-content: flex-end;
+    margin-right: 25px;
+  }
+
+  @include breakpoint(lg down) {
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px auto;
+    width: 200px;
+  }
 
   &__email {
     color: $color-white;
@@ -9,6 +25,10 @@
     padding: 12px;
     transition: background 200ms ease-out;
     user-select: initial;
+
+    @include breakpoint(lg down) {
+      background-color: darken($color-black, 2%);
+    }
 
     &:focus {
       background-color: darken($color-black, 100%);
