@@ -1,8 +1,19 @@
 $image-path: '/assets/img';
 
+// Breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 575,
+  md: 750,
+  lg: 1000,
+  xl: 1400
+);
+
+// Colors
 $color-black: rgb(50,50,50);
 $color-white: rgb(255,255,255);
 
+// Icons
 $social: (
   github: rgb(24,23,23),
   linkedin: rgb(0,119,181),
@@ -10,5 +21,6 @@ $social: (
   twitter: rgb(85,172,238)
 );
 
+// Fonts
 $font-helvetica: 'Helvetica Neue', Helvetica, sans-serif;
 $font-hind: 'Hind', $font-helvetica;
