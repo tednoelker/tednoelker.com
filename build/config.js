@@ -6,10 +6,7 @@ const path = require('path');
 
 // Browser support
 let browserlist = [
-  '> 0.5% in US',
-  'last 2 versions',
-  'not ie < 11',
-  'Firefox ESR'
+  'last 2 versions'
 ];
 
 // Directory paths

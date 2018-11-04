@@ -1,8 +1,19 @@
 body {
   @include font('Helvetica', 16px, 400);
+  background-color: $color-black;
 }
 
 main {
+  background-color: $color-white;
+  min-height: 100vh;
+  overflow-x: hidden;
   position: relative;
+  transition: transform 400ms cubic-bezier(0.42, 0, 0.2, 0.92);
   z-index: 2;
+
+  &.is-collapsed {
+    transform: translateX($menu-width);
+    transition: transform 400ms cubic-bezier(0.55,0.15,0.51,1.23);
+  }
+
 }
