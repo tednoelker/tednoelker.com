@@ -6,15 +6,7 @@
     },
     {
       "title": "Résumé",
-      "url": "/resume"
-    },
-    {
-      "title": "Portfolio",
-      "url": "/portfolio"
-    },
-    {
-      "title": "Notepad",
-      "url": "/notepad"
+      "url": "/resume.html"
     }
   ],
   "contact": [

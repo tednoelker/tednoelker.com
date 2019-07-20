@@ -11,7 +11,7 @@
   }
 
   &:focus {
-    background-color: darken($color-black, 100%);
+    background-color: $color-red;
     outline: 0;
   }
 
@@ -57,32 +57,34 @@
 
 }
 
-nav {
-  &:not(.is-open) {
-    @include breakpoint(lg down) {
+.navigation {
+  @include breakpoint(lg down) {
+    position: fixed;
+
+    &:not(.is-open) {
       display: none;
     }
   }
-}
 
-.navigation {
-  background-color: $color-black;
-  bottom: 0;
-  display: flex;
-  float: left;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  user-select: none;
-  width: 100%;
-  z-index: 3;
+  &__bar {
+    background-color: $color-black;
+    bottom: 0;
+    display: flex;
+    float: left;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    user-select: none;
+    width: 100%;
+    z-index: 3;
 
-  @include breakpoint(lg down) {
-    flex-direction: column;
-    height: 100%;
-    padding-top: 80px;
-    width: $menu-width;
-    z-index: 1;
+    @include breakpoint(lg down) {
+      flex-direction: column;
+      height: 100%;
+      padding-top: 80px;
+      width: $menu-width;
+      z-index: 1;
+    }
   }
 
   &__primary {

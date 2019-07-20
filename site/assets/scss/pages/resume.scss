@@ -27,10 +27,10 @@
 .resume-section {
 
   &__title {
-    @include font('Montserrat', 26px, 800);
+    @include font('Montserrat', 34px, 800);
     @include markup('h1');
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin: 50px 0;
     text-transform: lowercase;
   }
 

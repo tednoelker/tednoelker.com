@@ -1,7 +1,4 @@
 (function($, hamburger, nav, main) {
-
-  'use strict';
-
   let open = false;
 
   $(hamburger).on('click', function() {
@@ -16,5 +13,4 @@
 
     open = !open;
   });
-
 })(window.jkQuery, '.js-hamburger', 'nav', 'main');
