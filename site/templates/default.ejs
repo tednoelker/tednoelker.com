@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en-us" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title><%= meta.title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>body { opacity: 0; }</style>
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:800" as="style" onload="this.rel='stylesheet'" crossorigin>
-    <link rel="preload" href="/assets/css/global.css" as="style" onload="this.rel='stylesheet'">
+    <%- include('components/_meta.ejs'); %>
   </head>
   <body>
     <%- include('components/_navigation.ejs'); %>
     <main id="main" class="main main--<%= page.name %>" role="main">
       <%- include(`pages/_${page.name}.ejs`); %>
     </main>
-    <script src="/assets/js/global.js" type="module" async></script>
+    <%- include('components/_scripts.ejs'); %>
   </body>
 </html>

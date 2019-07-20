@@ -27,3 +27,8 @@ main {
 [tabindex="-1"]:focus {
   outline: 0;
 }
+
+::selection {
+  background-color: $color-black;
+  color: $color-yellow;
+}
