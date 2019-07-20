@@ -37,6 +37,28 @@
 
 }
 
+@mixin markup($tag) {
+  padding-left: 50px;
+  text-indent: -50px;
+
+  &:before,
+  &:after {
+    @include font('monospace', 16px, 200);
+    color: lighten($color-slate, 2%);
+    letter-spacing: 0.06em;
+  }
+
+  &:before {
+    content: '<#{$tag}>';
+    margin-right: 10px;
+  }
+
+  &:after {
+    content: '</#{$tag}>';
+    margin-left: 10px;
+  }
+}
+
 @mixin social-icon($preface, $name) {
   .#{$preface}#{$name} {
     background-image: url('#{$image-path}/icons/#{$name}.svg');

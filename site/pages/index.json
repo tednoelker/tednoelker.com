@@ -1,9 +1,9 @@
 {
   "template": "default",
   "meta": {
-    "title": "Home"
+    "title": "Ted Noelker"
   },
   "content": {
-    "key": "testing 123"
+    "name": "home"
   }
 }

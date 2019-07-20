@@ -1,0 +1,64 @@
+{
+  "template": "default",
+  "meta": {
+    "title": "Ted Noelker's Résumé"
+  },
+  "content": {
+    "name": "resume",
+    "history": {
+      "header": "Experience",
+      "roles": [
+        {
+          "title": "Engineering Manager",
+          "company": "Red Ventures",
+          "location": "Charlotte, N.C.",
+          "tenure": "March 2019 - Present",
+          "summary": [
+            "Strategic technical leader, managing the project lifecycle, resource allocation and product architecture across an eight-person front-end engineering team",
+            "Managing and mentoring six direct reports, providing ongoing feedback, performance reviews, and skill and career coaching",
+            "Primary technical liaison, translating business needs to workstreams and timelines",
+            "Hiring manager, interviewing potential candidates on site and over the phone for front-end openings across Red Ventures"
+          ]
+        },
+        {
+          "title": "Senior Front-End Developer",
+          "company": "Red Ventures",
+          "location": "Charlotte, N.C.",
+          "tenure": "March 2018 - March 2019",
+          "summary": [
+            "Led a small team of front-end developers responsible for maintaining and quickly iterating on the client-facing portion of multiple websites and web applications",
+            "Responsible for high-level architectural decisions for the sites my team owns as well helping to maintaining coding standards across the organization",
+            "Working with business and creative teams to scope projects and delegate tasks for the front-end",
+            "Directly managing a four-person front-end team, which includes task check-ins as well as long-term skills and professional development",
+            "Interviewing potential candidates for front-end openings across Red Ventures"
+          ]
+        },
+        {
+          "title": "Front-End Developer",
+          "company": "Red Ventures",
+          "location": "Charlotte, N.C.",
+          "tenure": "March 2017 - March 2018",
+          "summary": [
+            "Collaborated with strategic thinkers and creative types to steward digital brands for partners across the web, and across the world",
+            "Built and manged multiple domains in a fast-pace project lifecycle",
+            "Developed both responsive and highly optimized web experiences using semantic HTML and BEM-styled SCSS",
+            "Wrote extensible JS for the client and for Gulp/Node tasks to improve workflow and the deploy processes"
+          ]
+        },
+        {
+          "title": "Full-Stack Developer",
+          "company": "TimeKitJS",
+          "location": "Remote",
+          "tenure": "Dec. 2014 - Feb. 2017",
+          "summary": [
+            "Developed products and client-specific projects using the TimeKitJS library",
+            "Supervised site architecture, UI/UX, client- and server-side development",
+            "Assisted in debugging, maintaining and adding features to the libray",
+            "Authored and edited entries for the library's documentation",
+            "Acted as the key techincal point of contact for contract clients"
+          ]
+        }
+      ]
+    }
+  }
+}

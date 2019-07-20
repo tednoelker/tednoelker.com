@@ -9,9 +9,9 @@
     <link rel="preload" href="/assets/css/global.css" as="style" onload="this.rel='stylesheet'">
   </head>
   <body>
-    <%- include('partials/_navigation.ejs'); %>
+    <%- include('components/_navigation.ejs'); %>
     <main id="main" class="main" role="main">
-
+      <%- include(`pages/_${page.name}.ejs`); %>
     </main>
     <script src="/assets/js/global.js" type="module" async></script>
   </body>

@@ -1,0 +1,91 @@
+.page {
+
+  &__header {
+    background-color: $color-red;
+    height: 25vw;
+    margin-bottom: 5vw;
+    overflow: hidden;
+  }
+
+  &__section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__title {
+    @include font('Helvetica', 20vw, 600);
+    color: darken($color-white, 2%);
+    margin-left: 10%;
+    margin-top: 11vw;
+  }
+
+}
+
+.resume-section {
+
+  &__title {
+    @include font('Montserrat', 26px, 800);
+    @include markup('h1');
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+  }
+
+}
+
+.resume {
+
+  &__bullet {
+    margin-bottom: 10px;
+  }
+
+  &__company {
+    color: darken($color-slate, 25%);
+    white-space: nowrap;
+  }
+
+  &__header {
+    @include font('Helvetica', 21px, 200);
+    @include markup('li');
+    letter-spacing: 0.05em;
+  }
+
+  &__listing {
+    margin: 40px;
+  }
+
+  &__location {
+    margin-left: 10px;
+
+    &:before {
+      content: '/';
+      margin-right: 10px;
+    }
+  }
+
+  &__subheader {
+    color: $color-red;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+    margin-left: 50px;
+    margin-top: 7px;
+    text-transform: uppercase;
+  }
+
+  &__summary {
+    margin: 20px 30px 0 50px;
+  }
+
+  &__tenure {
+    font-weight: 700;
+  }
+
+  &__title {
+    color: darken($color-black, 100%);
+    text-transform: lowercase;
+  }
+
+}

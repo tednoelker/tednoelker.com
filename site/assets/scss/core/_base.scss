@@ -1,6 +1,8 @@
 body {
   @include font('Helvetica', 16px, 400);
   background-color: $color-black;
+  color: $color-black;
+  padding-bottom: 50px;
   transition: opacity 250ms;
   opacity: 1;
 }
