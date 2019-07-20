@@ -9,14 +9,7 @@
 
     $(this).class('toggle', 'is-open').attr('aria-label', ariaLabel);
     $(main).class('toggle', 'is-collapsed');
-
-    if (open) {
-      $(main).on('animationend', function() {
-        $(nav).class('toggle', 'is-collapsed');
-      });
-    } else {
-      $(nav).class('toggle', 'is-collapsed');
-    }
+    $(nav).class('toggle', 'is-open');
 
     const $focusElement = (open) ? $(main) : $(nav);
     $focusElement.attr('tabindex', '-1')[0].focus();

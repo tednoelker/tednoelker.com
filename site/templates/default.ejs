@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title><%= meta.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:800" />
-    <link rel="stylesheet" href="/assets/css/global.css">
+    <style>body { opacity: 0; }</style>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:800" as="style" onload="this.rel='stylesheet'" crossorigin>
+    <link rel="preload" href="/assets/css/global.css" as="style" onload="this.rel='stylesheet'">
   </head>
   <body>
     <%- include('partials/_navigation.ejs'); %>

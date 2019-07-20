@@ -18,26 +18,28 @@
 
   &__email {
     color: $color-white;
-    cursor: copy;
+    cursor: alias;
     float: left;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 2px;
+    opacity: 0.6;
     padding: 16px;
-    transition: background 200ms ease-out;
+    transition: background-color 200ms ease-out, opacity 200ms;
     user-select: initial;
 
     @include breakpoint(lg down) {
       background-color: darken($color-black, 2%);
+      margin-bottom: 10px;
     }
 
     &:focus {
       background-color: darken($color-black, 100%);
+      opacity: 1;
       outline: 0;
     }
 
-    &::selection {
-        color: #f5f51f;
-        outline: 0;
+    &:hover {
+      opacity: 1;
     }
 
   } //.contact__email
@@ -48,9 +50,13 @@
       background-size: 18px 18px;
       display: inline-block;
       float: left;
-      height: 100%;
-      transition: background 200ms ease-out;
+      height: 40px;
+      transition: background-color 200ms ease-out;
       width: 40px;
+
+      @include breakpoint(lg) {
+        height: 100%;
+      }
   } //.contact__icon
 
 } //.contact
