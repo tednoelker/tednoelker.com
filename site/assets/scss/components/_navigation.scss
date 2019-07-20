@@ -28,16 +28,13 @@
     .is-open & {
       transform: translateX(-1px) rotate(-45deg);
     }
-
   }
 
   &__bun--middle {
-
     .is-open & {
       opacity: 0;
       transform: translateX(90%);
     }
-
   }
 
   &__bun--top {
@@ -46,7 +43,6 @@
     .is-open & {
       transform: translateX(-1px) rotate(45deg);
     }
-
   }
 
   &__icon {

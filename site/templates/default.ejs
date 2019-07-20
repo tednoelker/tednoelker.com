@@ -10,7 +10,7 @@
   </head>
   <body>
     <%- include('components/_navigation.ejs'); %>
-    <main id="main" class="main" role="main">
+    <main id="main" class="main main--<%= page.name %>" role="main">
       <%- include(`pages/_${page.name}.ejs`); %>
     </main>
     <script src="/assets/js/global.js" type="module" async></script>

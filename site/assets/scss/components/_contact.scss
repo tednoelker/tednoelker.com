@@ -1,20 +1,6 @@
 .contact {
-  display: flex;
+  justify-content: flex-end;
   flex: 1 0 auto;
-
-  @include breakpoint(lg) {
-    justify-content: flex-end;
-    margin-right: 25px;
-  }
-
-  @include breakpoint(lg down) {
-    align-content: flex-end;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 25px auto;
-    width: 200px;
-  }
 
   &__email {
     color: $color-white;
@@ -58,5 +44,26 @@
         height: 100%;
       }
   } //.contact__icon
+
+  &__list {
+    display: flex;
+    flex: 1 0 auto;
+
+    @include breakpoint(lg) {
+      justify-content: flex-end;
+      margin-right: 25px;
+    }
+
+    @include breakpoint(lg down) {
+      align-content: flex-end;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      height: 100%;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 25px 0;
+      width: 200px;
+    }
+  }
 
 } //.contact

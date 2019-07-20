@@ -14,12 +14,14 @@
       <li><a class="navigation__primary" href="<%= link.url %>"><%= link.title %></a></li>
     <% }); %>
 
-    <ul class="navigation__item  contact">
-      <li><a class="contact__email" href="mailto:<%= meta.email %>"><%= meta.email %></a></li>
-      <% site.navigation.contact.forEach((link) => { %>
-        <li><a class="contact__icon  u-<%= link.title.toLowerCase() %> u-accessible-text" href="<%= link.url %>" rel="nofollow noopener" target="_blank"><%= link.title %></a></li>
-      <% }); %>
-    </ul><!-- /.navigation__item -->
+    <li class="contact">
+      <ul class="contact__list">
+        <li><a class="contact__email" href="mailto:<%= meta.email %>"><%= meta.email %></a></li>
+        <% site.navigation.contact.forEach((link) => { %>
+          <li><a class="contact__icon  u-<%= link.title.toLowerCase() %> u-accessible-text" href="<%= link.url %>" rel="nofollow noopener" target="_blank"><%= link.title %></a></li>
+        <% }); %>
+      </ul><!-- /.navigation__item -->
+    </li>
 
   </ul><!-- /.navigation -->
 

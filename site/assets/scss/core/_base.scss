@@ -8,8 +8,6 @@ body {
 }
 
 main {
-  background-color: darken($color-white, 10%);
-  background-image: linear-gradient(40deg, darken($color-white, 10%), $color-white);
   min-height: 100vh;
   overflow-x: hidden;
   padding-bottom: 50px;

@@ -1,3 +1,8 @@
+.main--resume {
+  background-color: darken($color-white, 10%);
+  background-image: linear-gradient(40deg, darken($color-white, 10%), $color-white);
+}
+
 .page {
 
   &__header {
