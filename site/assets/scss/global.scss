@@ -1,15 +1,17 @@
 // SCSS functions
-@import 'partials/variables';
-@import 'partials/mixins';
-@import 'partials/breakpoints';
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/breakpoints';
 
 // Reset styles
-@import 'partials/reset';
+@import 'core/reset';
 
-// Core styles
-@import 'partials/base';
+// Base styles
+@import 'core/base';
 
-// BEM
-@import 'partials/contact';
-@import 'partials/navigation';
-@import 'partials/utilities';
+// Components
+@import 'components/contact';
+@import 'components/navigation';
+
+// Utilities
+@import 'core/utilities';

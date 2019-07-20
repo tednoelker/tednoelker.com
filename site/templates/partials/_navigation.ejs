@@ -6,7 +6,7 @@
   </svg>
 </button>
 
-<nav>
+<nav class="is-collapsed">
 
   <ul class="navigation">
 
@@ -17,7 +17,7 @@
     <ul class="navigation__item  contact">
       <li><a class="contact__email" href="mailto:<%= meta.email %>"><%= meta.email %></a></li>
       <% site.navigation.contact.forEach((link) => { %>
-        <li><a class="contact__icon  u-<%= link.title.toLowerCase() %> u-accessible-text" href="<%= link.url %>" rel="nofollow" target="_blank"><%= link.title %></a></li>
+        <li><a class="contact__icon  u-<%= link.title.toLowerCase() %> u-accessible-text" href="<%= link.url %>" rel="nofollow noopener" target="_blank"><%= link.title %></a></li>
       <% }); %>
     </ul><!-- /.navigation__item -->
 

@@ -5,12 +5,20 @@
   let open = false;
 
   $(hamburger).on('click', function() {
-    let ariaLabel = (open) ? 'Open menu' : 'Close menu';
+    const ariaLabel = (open) ? 'Open menu' : 'Close menu';
 
     $(this).class('toggle', 'is-open').attr('aria-label', ariaLabel);
     $(main).class('toggle', 'is-collapsed');
 
-    let $focusElement = (open) ? $(main) : $(nav);
+    if (open) {
+      $(main).on('animationend', function() {
+        $(nav).class('toggle', 'is-collapsed');
+      });
+    } else {
+      $(nav).class('toggle', 'is-collapsed');
+    }
+
+    const $focusElement = (open) ? $(main) : $(nav);
     $focusElement.attr('tabindex', '-1')[0].focus();
 
     open = !open;

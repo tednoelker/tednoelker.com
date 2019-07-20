@@ -3,8 +3,8 @@
   @if $family == 'default' or $family == 'Helvetica' {
     $family: $font-helvetica;
   }
-  @if $family == 'Hind' {
-    $family: $font-hind;
+  @if $family == 'Montserrat' {
+    $family: $font-montserrat;
   }
 
   // e.g. @include font('Hind', 400);

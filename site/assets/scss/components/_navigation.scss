@@ -1,4 +1,5 @@
 .hamburger {
+  background-color: $color-black;
   left: 15px;
   position: fixed;
   top: 15px;
@@ -56,6 +57,14 @@
 
 }
 
+nav {
+  &.is-collapsed {
+    @include breakpoint(lg down) {
+      display: none;
+    }
+  }
+}
+
 .navigation {
   background-color: $color-black;
   bottom: 0;
@@ -66,20 +75,22 @@
   position: fixed;
   user-select: none;
   width: 100%;
+  z-index: 3;
 
   @include breakpoint(lg down) {
     flex-direction: column;
     height: 100%;
     padding-top: 80px;
     width: $menu-width;
+    z-index: 1;
   }
 
   &__primary {
-    @include font('Hind', 600);
+    @include font('Montserrat', 800);
     color: $color-white;
     float: left;
     letter-spacing: 2px;
-    padding: 12px 25px;
+    padding: 16px 25px;
     text-transform: uppercase;
     transition: background 200ms ease-out;
 

@@ -9,7 +9,7 @@ const uglify = composer(uglifyES, console);
 
 // Hydrate templates with page data
 function build(end) {
-  return gulp.src(`${config.get('assets')}/js/!(_*)*.js`)
+  return gulp.src(`${config.get('assets')}/js/**/!(_*)*.js`)
     .pipe(
       uglify()
       .on('error', (error) => {
@@ -24,7 +24,7 @@ function build(end) {
 
 // Watch for changes
 function watch(end) {
-  return gulp.watch(`${config.get('assets')}/scss/**/*.scss`, build);
+  return gulp.watch(`${config.get('assets')}/js/**/*.js`, build);
 }
 
 // Gulp log name
