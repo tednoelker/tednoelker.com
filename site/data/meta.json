@@ -2,7 +2,8 @@
   "title": "Ted Noelker",
   "description": "Ted is a senior web engineer based in Charlotte, N.C.",
   "keywords": "ted noelker, front end, javascript, css, html, website, web app, senior, web engineer, web developer, charlotte nc",
-  "path": "https://ted.noelker.info/assets/img/meta",
+  "root": "https://tednoelker.com",
+  "path": "/assets/img/meta",
   "color": "#e33d06",
   "email": "ted@noelker.info",
   "twitter": "@TedNoelker"
