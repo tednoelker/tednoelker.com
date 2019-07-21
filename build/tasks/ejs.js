@@ -44,7 +44,8 @@ function build(end) {
           {
             meta: mergeKeys(file.meta, util.data.meta) || {},
             page: file.content || {},
-            site: util.data || {}
+            site: util.data || {},
+            slug: file.name
           },
           {
             async: false,
