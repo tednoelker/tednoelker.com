@@ -1,0 +1,9 @@
+{
+  "template": "default",
+  "meta": {
+    "title": "Ted Noelker"
+  },
+  "content": {
+    "name": "about"
+  }
+}

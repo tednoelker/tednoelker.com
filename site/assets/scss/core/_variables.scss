@@ -1,0 +1,32 @@
+$image-path: '/assets/img';
+
+// Breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 575,
+  md: 750,
+  lg: 1000,
+  xl: 1400
+);
+
+// Colors
+$color-black: rgb(50,50,50);
+$color-white: rgb(255,255,255);
+$color-slate: rgb(179,187,193);
+$color-yellow: rgb(238,220,65);
+$color-red: rgb(227,61,6);
+
+// Icons
+$social: (
+  github: rgb(24,23,23),
+  linkedin: rgb(0,119,181),
+  spotify: rgb(30,215,96),
+  twitter: rgb(85,172,238)
+);
+
+// Fonts
+$font-helvetica: 'Helvetica Neue', Helvetica, sans-serif;
+$font-montserrat: 'Montserrat', $font-helvetica;
+
+// Display
+$menu-width: 260px;

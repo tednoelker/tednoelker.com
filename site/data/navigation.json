@@ -1,0 +1,30 @@
+{
+  "primary": [
+    {
+      "title": "Meet Ted",
+      "url": "/"
+    },
+    {
+      "title": "Résumé",
+      "url": "/resume.html"
+    }
+  ],
+  "contact": [
+    {
+      "title": "GitHub",
+      "url": "https://github.com/tednoelker"
+    },
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/tednoelker"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "http://www.linkedin.com/in/tednoelker"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://open.spotify.com/user/121569357/playlist/1kvCRSlI9JnRFiTdRVKm38"
+    }
+  ]
+}

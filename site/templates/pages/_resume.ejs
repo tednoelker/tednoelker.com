@@ -1,0 +1,28 @@
+<header class="page__header">
+  <h1 class="page__title">résumé</h1>
+</header>
+
+<section class="page__section">
+  <h2 class="resume-section__title"><%= page.history.header %></h2>
+  <ul>
+    <% page.history.roles.forEach((job) => { %>
+      <li class="resume__listing">
+        <header>
+          <h3 class="resume__header">
+            <span class="resume__title"><%= job.title %>,</span>
+            <span class="resume__company"><%= job.company %></span>
+          </h3>
+          <p class="resume__subheader">
+            <time class="resume__tenure"><%= job.tenure %></time>
+            <span class="resume__location"><%= job.location %></span>
+          </p>
+        </header>
+        <ul class="resume__summary">
+          <% job.summary.forEach((bullet) => { %>
+            <li class="resume__bullet"><%= bullet %></li>
+          <% }) %>
+        </ul>
+      </li>
+    <% }) %>
+  </ul>
+</section>

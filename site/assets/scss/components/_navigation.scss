@@ -1,0 +1,109 @@
+.hamburger {
+  background-color: $color-black;
+  left: 15px;
+  position: fixed;
+  top: 15px;
+  transition: background 200ms ease-out;
+  z-index: 3;
+
+  @include breakpoint(lg) {
+    display: none;
+  }
+
+  &:focus {
+    background-color: $color-red;
+    outline: 0;
+  }
+
+  &__bun {
+    stroke: $color-white;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    transition: opacity 300ms, transform 300ms;
+  }
+
+  &__bun--bottom {
+    transform-origin: 3px;
+
+    .is-open & {
+      transform: translateX(-1px) rotate(-45deg);
+    }
+  }
+
+  &__bun--middle {
+    .is-open & {
+      opacity: 0;
+      transform: translateX(90%);
+    }
+  }
+
+  &__bun--top {
+    transform-origin: 3px;
+
+    .is-open & {
+      transform: translateX(-1px) rotate(45deg);
+    }
+  }
+
+  &__icon {
+    height: 22px;
+    margin: 10px;
+    width: 28px;
+  }
+
+}
+
+.navigation {
+  @include breakpoint(lg down) {
+    position: fixed;
+
+    &:not(.is-open) {
+      display: none;
+    }
+  }
+
+  &__bar {
+    background-color: $color-black;
+    bottom: 0;
+    display: flex;
+    float: left;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    user-select: none;
+    width: 100%;
+    z-index: 3;
+
+    @include breakpoint(lg down) {
+      flex-direction: column;
+      height: 100%;
+      padding-top: 80px;
+      width: $menu-width;
+      z-index: 1;
+    }
+  }
+
+  &__primary {
+    @include font('Montserrat', 800);
+    color: $color-white;
+    float: left;
+    letter-spacing: 2px;
+    padding: 16px 25px;
+    text-transform: uppercase;
+    transition: background 200ms ease-out;
+
+    @include breakpoint(lg down) {
+      padding-bottom: 16px;
+      padding-top: 16px;
+      width: 100%;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: darken($color-black, 100%);
+      outline: 0;
+    }
+
+  } //.navigation__primary
+
+} //.navigation

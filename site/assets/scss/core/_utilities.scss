@@ -1,0 +1,10 @@
+.u-accessible-text {
+  font-size: 0;
+  text-indent: 200%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@each $social-icon in ('github', 'linkedin', 'spotify', 'twitter') {
+    @include social-icon('u-', $social-icon);
+}

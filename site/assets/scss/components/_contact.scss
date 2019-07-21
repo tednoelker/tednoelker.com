@@ -1,0 +1,69 @@
+.contact {
+  justify-content: flex-end;
+  flex: 1 0 auto;
+
+  &__email {
+    color: $color-white;
+    cursor: alias;
+    float: left;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    padding: 16px;
+    transition: background-color 200ms ease-out, opacity 200ms;
+    user-select: initial;
+
+    @include breakpoint(lg down) {
+      background-color: darken($color-black, 2%);
+      margin-bottom: 10px;
+    }
+
+    &:focus {
+      background-color: darken($color-black, 100%);
+      opacity: 1;
+      outline: 0;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+  } //.contact__email
+
+  &__icon {
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 18px 18px;
+      display: inline-block;
+      float: left;
+      height: 40px;
+      transition: background-color 200ms ease-out;
+      width: 40px;
+
+      @include breakpoint(lg) {
+        height: 100%;
+      }
+  } //.contact__icon
+
+  &__list {
+    display: flex;
+    flex: 1 0 auto;
+
+    @include breakpoint(lg) {
+      justify-content: flex-end;
+      margin-right: 25px;
+    }
+
+    @include breakpoint(lg down) {
+      align-content: flex-end;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      height: 100%;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 25px 0;
+      width: 200px;
+    }
+  }
+
+} //.contact
