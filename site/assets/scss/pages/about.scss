@@ -35,7 +35,7 @@
   }
 
   &__ted {
-    @include font('Montserrat', 66vw, 800);
+    @include font('Montserrat', 64vw, 800);
     color: darken($color-yellow, 15%);
     line-height: 1;
     margin-left: -10vw;
