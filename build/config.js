@@ -2,6 +2,7 @@
 const data = require('./utils/data.js');
 const error = require('./utils/error.js');
 const log = require('./utils/log.js');
+const router = require('./utils/router.js');
 const path = require('path');
 
 // Browser support
@@ -27,7 +28,8 @@ let methods = {
     if (typeof paths[key] === 'undefined') {
       return console.error(`Invalid config key: "${key}"`);
     }
-    return paths.cwd + paths.src + paths[key];
+    const directory = (key === 'dist') ? paths.dist : paths.src + paths[key];
+    return paths.cwd + directory;
   }
 };
 
@@ -35,10 +37,11 @@ let methods = {
 let server = {
   port: 5000,
   host: 'localhost',
-  root: paths.cwd + paths.dist,
+  root: methods.get('dist'),
   mount: [],
   open: true,
-  logLevel: 0
+  logLevel: 0,
+  middleware: [router(methods.get('dist'))]
 };
 
 // Util libs
