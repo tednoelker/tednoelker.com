@@ -58,6 +58,8 @@ function build(end) {
       .pipe(
         htmlmin({
           collapseWhitespace: true,
+          minifyCSS: true,
+          minifyJS: true,
           removeComments: true
         })
       )
