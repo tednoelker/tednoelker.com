@@ -10,9 +10,9 @@
   },
   "main": "build/index.js",
   "scripts": {
-    "build": "gulp --gulpfile=build/index.js",
-    "dev": "gulp dev --gulpfile=build/index.js",
-    "serve": "gulp serve --gulpfile=build/index.js"
+    "build": "node_modules/.bin/gulp --gulpfile=build/index.js",
+    "dev": "node_modules/.bin/gulp dev --gulpfile=build/index.js",
+    "serve": "node_modules/.bin/gulp serve --gulpfile=build/index.js"
   },
   "dependencies": {
     "autoprefixer": "^9.3.1",
