@@ -1,9 +1,16 @@
 import { $ } from './utilities.js';
 
-(function($hamburger, $nav, $main) {
+/**
+ * Toogle mobile menu
+ *
+ * @param {object} $tigger
+ * @param {object} $nav
+ * @param {object} $main
+ */
+(function toggleMenu($tigger, $nav, $main) {
   let open = false;
 
-  $hamburger.addEventListener('click', function() {
+  $tigger.addEventListener('click', function() {
     const ariaLabel = (open) ? 'Open menu' : 'Close menu';
     const $focusElement = (open) ? $main : $nav;
 

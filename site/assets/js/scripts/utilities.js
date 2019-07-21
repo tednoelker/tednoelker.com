@@ -1,5 +1,5 @@
 /**
- * querySelector shortcut
+ * querySelector() shortcut
  *
  * @param {string} selector
  * @param {object} [node=document]
