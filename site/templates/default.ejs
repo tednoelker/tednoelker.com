@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
   <head>
-    <%- include('components/_meta.ejs'); %>
+    <%- include('core/_meta.ejs'); %>
   </head>
   <body>
     <%- include('components/_navigation.ejs'); %>
     <main id="main" class="main main--<%= page.name %>" role="main">
       <%- include(`pages/_${page.name}.ejs`); %>
     </main>
-    <%- include('components/_scripts.ejs'); %>
+    <%- include('core/_scripts.ejs'); %>
   </body>
 </html>
