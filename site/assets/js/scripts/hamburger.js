@@ -1,16 +1,21 @@
-(function($, hamburger, nav, main) {
+import { $ } from './utilities.js';
+
+(function($hamburger, $nav, $main) {
   let open = false;
 
-  $(hamburger).on('click', function() {
+  $hamburger.addEventListener('click', function() {
     const ariaLabel = (open) ? 'Open menu' : 'Close menu';
+    const $focusElement = (open) ? $main : $nav;
 
-    $(this).class('toggle', 'is-open').attr('aria-label', ariaLabel);
-    $(main).class('toggle', 'is-collapsed');
-    $(nav).class('toggle', 'is-open');
+    this.classList.toggle('is-open')
+    this.setAttribute('aria-label', ariaLabel);
 
-    const $focusElement = (open) ? $(main) : $(nav);
-    $focusElement.attr('tabindex', '-1')[0].focus();
+    $main.classList.toggle('is-collapsed');
+    $nav.classList.toggle('is-open');
+
+    $focusElement.setAttribute('tabindex', '-1')
+    $focusElement.focus();
 
     open = !open;
   });
-})(window.jkQuery, '.js-hamburger', 'nav', 'main');
+})($('.js-hamburger'), $('nav'), $('main'));
