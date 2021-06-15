@@ -20,7 +20,7 @@
     stroke-linecap: round;
     stroke-width: 2px;
     transition: opacity 300ms, transform 300ms;
-  }
+  } //.hamburger__bun
 
   &__bun--bottom {
     transform-origin: 3px;
@@ -28,14 +28,14 @@
     .is-open & {
       transform: translateX(-1px) rotate(-45deg);
     }
-  }
+  } //.hamburger__bun--bottom
 
   &__bun--middle {
     .is-open & {
       opacity: 0;
       transform: translateX(90%);
     }
-  }
+  } //.hamburger__bun--middle
 
   &__bun--top {
     transform-origin: 3px;
@@ -43,15 +43,15 @@
     .is-open & {
       transform: translateX(-1px) rotate(45deg);
     }
-  }
+  } //.hamburger__bun--top
 
   &__icon {
     height: 22px;
     margin: 10px;
     width: 28px;
-  }
+  } //.hamburger__icon
 
-}
+} //.hamburger
 
 .navigation {
   @include breakpoint(lg down) {
@@ -90,7 +90,7 @@
       width: $menu-width;
       z-index: 1;
     }
-  }
+  } //.navigation__bar
 
   &__primary {
     @include font('Montserrat', 800);
