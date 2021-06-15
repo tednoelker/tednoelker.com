@@ -1,9 +1,11 @@
 .main--index {
-  background-color: $color-yellow;
-
   @include breakpoint(xl) {
     max-height: 100vh;
     overflow: hidden;
+  }
+
+  @include breakpoint(lg) {
+    background-color: $color-yellow;
   }
 }
 
@@ -30,16 +32,27 @@
     }
 
     @include breakpoint(xl down) {
-      margin: 30px 30px 90px;
+      background-color: $color-yellow;
+      padding: 60px 30px;
     }
   }
 
   &__ted {
-    @include font('Montserrat', 64vw, 800);
-    color: darken($color-yellow, 15%);
+    @include font('Montserrat', 50vw, 800);
+    color: $color-yellow;
     line-height: 1;
-    margin-left: -10vw;
+    text-align: center;
     user-select: none;
+
+    @include breakpoint(lg) {
+      color: darken($color-yellow, 15%);
+      font-size: 64vw;
+      margin-left: -10vw;
+    }
+
+    @include breakpoint(lg down) {
+      margin-top: 75px;
+    }
   }
 
 }
