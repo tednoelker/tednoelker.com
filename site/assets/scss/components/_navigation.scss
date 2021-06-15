@@ -1,3 +1,29 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-30px);
+    visibility: hidden;
+  }
+}
+
 .hamburger {
   background-color: $color-black;
   left: 15px;
@@ -55,10 +81,19 @@
 
 .navigation {
   @include breakpoint(lg down) {
+    height: 100%;
+    opacity: 1;
     position: fixed;
+    transform: translateX(0);
+    transition: transform 500ms, opacity 500ms, visibility 500ms;
+    visibility: visible;
+    width: 100%;
 
     &:not(.is-open) {
-      display: none;
+      opacity: 0;
+      transform: translateX(-30px);
+      transition-duration: 200ms;
+      visibility: hidden;
     }
   }
 

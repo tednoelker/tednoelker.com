@@ -1,4 +1,6 @@
 .main--index {
+  background-color: $color-black;
+
   @include breakpoint(xl) {
     max-height: 100vh;
     overflow: hidden;
