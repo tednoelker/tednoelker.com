@@ -8,13 +8,25 @@
       "header": "Experience",
       "roles": [
         {
+          "title": "Director of Engineering",
+          "company": "Red Ventures",
+          "location": "Charlotte, N.C.",
+          "tenure": "August 2021 - present",
+          "summary": [
+            "Leader of leaders, responsible for organizational design, staffing decisions and project delivery across multiple engineering teams",
+            "Strategic partner to cross-functional leaders, internal and external stakeholders",
+            "Guiding strategy, investment and alignment across several workstreams, anticipating needs 3-12 months out",
+            "Creating practical process to speed up task delivery and foster collaboration"
+          ]
+        },
+        {
           "title": "Engineering Manager",
           "company": "Red Ventures",
           "location": "Charlotte, N.C.",
-          "tenure": "March 2019 - Present",
+          "tenure": "March 2019 - August 2021",
           "summary": [
-            "Strategic technical leader, managing the project lifecycle, resource allocation and product architecture across an eight-person front-end engineering team",
-            "Managing and mentoring six direct reports, providing ongoing feedback, performance reviews, and skill and career coaching",
+            "Strategic technical leader, managing the project lifecycle, resource allocation and product architecture across an engineering team",
+            "Managed and mentored up to 10 direct reports, providing ongoing feedback, performance reviews, and skill and career coaching",
             "Primary technical liaison, translating business needs to workstreams and timelines",
             "Hiring manager, interviewing potential candidates on site and over the phone for front-end openings across Red Ventures"
           ]
