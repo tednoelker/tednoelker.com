@@ -27,7 +27,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.1",
-    "npm": "^6.14.6",
+    "npm": "^6.14.17",
     "uglify-es": "^3.3.9"
   },
   "devDependencies": {
