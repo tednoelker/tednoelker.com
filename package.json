@@ -1,12 +1,12 @@
 {
   "name": "tednoelker",
   "version": "4.0.0",
-  "description": "Dev and build pipeline for my portfolio site",
-  "author": "Ted Noelker <ted@noelker.info> (http://ted.noelker.info)",
+  "description": "App code and CI pipeline for my portfolio site",
+  "author": "Ted Noelker <ted@noelker.info> (https://tednoelker.com)",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:tednoelker/ted.noelker.info.git"
+    "url": "ssh://git@github.com:tednoelker/tednoelker.com.git"
   },
   "main": "build/index.js",
   "scripts": {
