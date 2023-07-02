@@ -49,19 +49,22 @@
       opacity: 1;
     }
     100% {
-      left: 10px;
+      left: 7px;
       opacity: 0;
     }
   }
 
   &__link {
-    animation: 2s direct;
     color: darken($color-white, 5%);
     font-weight: 200;
     letter-spacing: 2px;
     position: relative;
     
     &:before {
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-name: direct;
+      animation-timing-function: linear;
       content: '➜';
       margin-right: 10px;
     }
