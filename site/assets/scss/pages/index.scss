@@ -39,6 +39,24 @@
     }
   }
 
+  &__link {
+    color: $color-white;
+    font-size: 24px;
+    
+    &:after {
+      content: '➜';
+      margin-left: 5px;
+    }
+  }
+
+  &__nav {
+    margin: 50px 20px 0;
+
+    @include breakpoint(lg) {
+      display: none;
+    }
+  }
+
   &__ted {
     @include font('Montserrat', 50vw, 800);
     color: $color-yellow;
