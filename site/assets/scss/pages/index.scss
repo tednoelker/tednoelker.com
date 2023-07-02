@@ -40,14 +40,13 @@
   }
 
   &__link {
-    color: darken($color-white, 2%);
+    color: darken($color-white, 5%);
     font-weight: 200;
     letter-spacing: 2px;
-    font-size: 24px;
     
-    &:after {
+    &:before {
       content: '➜';
-      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 
