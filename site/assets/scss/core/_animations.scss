@@ -1,0 +1,14 @@
+@keyframes point {
+  5%  {
+    left: -10px;
+    opacity: 0;
+  }
+  50% {
+    left: 0px;
+    opacity: 1;
+  }
+  95% {
+    left: 7px;
+    opacity: 0;
+  }
+}
