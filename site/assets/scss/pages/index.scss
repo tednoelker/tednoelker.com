@@ -40,12 +40,14 @@
   }
 
   &__link {
-    color: $color-white;
+    color: darken($color-white, 2%);
+    font-weight: 200;
+    letter-spacing: 2px;
     font-size: 24px;
     
     &:after {
       content: '➜';
-      margin-left: 5px;
+      margin-left: 10px;
     }
   }
 
