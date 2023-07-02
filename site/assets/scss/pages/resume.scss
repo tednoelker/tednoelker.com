@@ -59,7 +59,12 @@
   }
 
   &__listing {
-    margin: 40px;
+    margin: 40px 0;
+
+    @include breakpoint(md) {
+      margin-bottom: 40px;
+      margin-top: 40px;
+    }
   }
 
   &__location {
