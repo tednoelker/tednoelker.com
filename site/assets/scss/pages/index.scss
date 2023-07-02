@@ -55,9 +55,12 @@
   }
 
   &__link {
+    background-color: $color-black;
     color: darken($color-white, 5%);
+    display: block;
     font-weight: 200;
     letter-spacing: 2px;
+    padding: 20px;
     
     &:before {
       animation-duration: 2s;
@@ -73,8 +76,6 @@
   }
 
   &__nav {
-    margin: 50px 20px 0;
-
     @include breakpoint(lg) {
       display: none;
     }
