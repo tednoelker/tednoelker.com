@@ -74,9 +74,13 @@
     user-select: none;
 
     @include breakpoint(lg) {
-      color: darken($color-yellow, 15%);
-      font-size: 64vw;
+      $yellow-accent: darken($color-yellow, 15%);
+      background-clip: text;
+      background-image: repeating-radial-gradient(circle at 40% 20%, $yellow-accent, $yellow-accent 2px, transparent 2px, transparent 4px);
+      color: $yellow-accent;
+      font-size: 62vw;
       margin-left: -10vw;
+      text-fill-color: transparent;
     }
 
     @include breakpoint(lg down) {
