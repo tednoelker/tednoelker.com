@@ -8,15 +8,29 @@
       "header": "Experience",
       "roles": [
         {
-          "title": "Director of Engineering",
+          "title": "Director of Engineering - Telesales Technology",
           "company": "Red Ventures",
           "location": "Charlotte, N.C.",
-          "tenure": "August 2021 - present",
+          "tenure": "September 2022 - present",
           "summary": [
-            "Leader of leaders, responsible for organizational design, staffing decisions and project delivery across multiple engineering teams",
+            "Leader of leaders, managing a hybrid engineering team totaling 40 full-time employees and contractors",
+            "Responsible for budgeting, cost management, vendor selection, and vendor management totaling more than $7 million in annual technology spend",
+            "Product strategist, overseeing the deprecation and modernization of critical sales tooling developed and maintained in-house",
+            "Technology leader responsible for a phone system product, leveraged internally by 8 different stakeholders, and order platform product, integrated externally with 30 partners",
+            "Accountable for a PCI-complaint CDE platform, audited annually against the industry's strictest security standards"
+          ]
+        },
+        {
+          "title": "Director of Engineering - Web & Martech",
+          "company": "Red Ventures",
+          "location": "Charlotte, N.C.",
+          "tenure": "August 2021 - September 2022",
+          "summary": [
+            "Leader of leaders, responsible for organizational design, staffing and project delivery across hybrid engineering teams",
             "Strategic partner to cross-functional leaders, internal and external stakeholders",
-            "Set strategy, investment and alignment across several workstreams, anticipating needs 3-12 months out",
-            "Accountable for more than a dozen unique, consumer-facing web applications and a handful of internal products that serve more than 3 million total users each month"
+            "Set strategy, investment and alignment across several workstreams, anticipating needs 6-24 months out",
+            "Accountable for more than a dozen unique, consumer-facing web applications and a number of internal products that serve more than 3 million in total each month",
+            "Responsible for the data lifecycle of multiple performance marketing technologies, including Google, Meta, and numerous other search and social media platforms"
           ]
         },
         {
