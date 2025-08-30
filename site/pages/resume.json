@@ -8,41 +8,41 @@
       "header": "Experience",
       "roles": [
         {
-          "title": "Director of Engineering - Telesales Technology",
+          "title": "Director of Engineering - Digital Products",
           "company": "Red Ventures",
           "location": "Charlotte, N.C.",
           "tenure": "September 2022 - present",
           "summary": [
-            "Leader of leaders, managing a hybrid engineering team totaling 40 full-time employees and contractors",
+            "Leader of senior managers and IC technical architects, overseeing multi-function engineering teams totaling 40 full-time employees and contractors",
+            "Technology leader responsible for an enterprise cloud phone platform, leveraged internally by 10 different stakeholder teams, and proprietary order platform, integrated externally with 30 partners",
+            "Product strategist, overseeing the transformation and modernization of business critical internal and B2B products developed in-house",
             "Responsible for budgeting, cost management, vendor selection, and vendor management totaling more than $7 million in annual technology spend",
-            "Product strategist, overseeing the deprecation and modernization of critical sales tooling developed and maintained in-house",
-            "Technology leader responsible for a phone system product, leveraged internally by 8 different stakeholders, and order platform product, integrated externally with 30 partners",
-            "Accountable for a PCI-complaint CDE platform, audited annually against the industry's strictest security standards"
+            "Accountable for a PCI-complaint CDE platform, audited annually against the industry’s strictest security standards"
           ]
         },
         {
-          "title": "Director of Engineering - Web & Martech",
+          "title": "Director of Engineering - Application & Martech",
           "company": "Red Ventures",
           "location": "Charlotte, N.C.",
           "tenure": "August 2021 - September 2022",
           "summary": [
-            "Leader of leaders, responsible for organizational design, staffing and project delivery across hybrid engineering teams",
-            "Strategic partner to cross-functional leaders, internal and external stakeholders",
+            "Leader of leaders, responsible for organizational design, staffing and project delivery across software, data, and platform engineering teams (up to 25)",
+            "Strategic partner to cross-functional leaders, internal & external stakeholders",
             "Set strategy, investment and alignment across several workstreams, anticipating needs 6-24 months out",
-            "Accountable for more than a dozen unique, consumer-facing web applications and a number of internal products that serve more than 3 million in total each month",
-            "Responsible for the data lifecycle of multiple performance marketing technologies, including Google, Meta, and numerous other search and social media platforms"
+            "Accountable for more than a dozen consumer-facing web applications and four web-based internal marketing products that serve more than 3 million customers each month",
+            "Responsible for the data lifecycle of multiple performance marketing technologies, including Google, Meta, display, and numerous other search and social media platforms"
           ]
         },
         {
-          "title": "Engineering Manager",
+          "title": "Engineering Manager - Application & Martech",
           "company": "Red Ventures",
           "location": "Charlotte, N.C.",
           "tenure": "March 2019 - August 2021",
           "summary": [
-            "Strategic technical leader, managing the project lifecycle, resource allocation and product architecture across an engineering team",
+            "Strategic technical leader, managing the project lifecycle, resource allocation and product architecture across a full-stack software engineering team",
             "Managed and mentored up to 10 direct reports, providing ongoing feedback, performance reviews, and skill and career coaching",
-            "Primary technical liaison, translating business needs to workstreams and timelines",
-            "Hiring manager, interviewing potential candidates on site and over the phone for front-end openings across Red Ventures"
+            "Primary technical liaison, translating business and client requirements to project plans and tickets using Jira and agile methodologies",
+            "Accountable for multiple performance marketing web applications managed  agency-style on behalf of some of the world’s largest brands"
           ]
         },
         {
