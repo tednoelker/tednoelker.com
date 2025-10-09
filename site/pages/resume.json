@@ -8,16 +8,16 @@
       "header": "Experience",
       "roles": [
         {
-          "title": "Director of Engineering - Digital Products",
+          "title": "Director of Engineering - Products & Platform",
           "company": "Red Ventures",
           "location": "Charlotte, N.C.",
-          "tenure": "September 2022 - present",
+          "tenure": "September 2022 - October 2025",
           "summary": [
-            "Leader of senior managers and IC technical architects, overseeing multi-function engineering teams totaling 40 full-time employees and contractors",
-            "Technology leader responsible for an enterprise cloud phone platform, leveraged internally by 10 different stakeholder teams, and proprietary order platform, integrated externally with 30 partners",
+            "Leader of senior managers and technical architects, overseeing multi-function engineering teams totaling 40+ full-time employees and contractors",
+            "Technology leader responsible for supporting an enterprise cloud phone platform, leveraged internally by 10+ different stakeholder teams, and proprietary sales platform, integrated externally with 30+ partners",
             "Product strategist, overseeing the transformation and modernization of business critical internal and B2B products developed in-house",
-            "Responsible for budgeting, cost management, vendor selection, and vendor management totaling more than $7 million in annual technology spend",
-            "Accountable for a PCI-complaint CDE platform, audited annually against the industry’s strictest security standards"
+            "Responsible for tech budgeting, cost management, vendor selection, and vendor management totaling more than $7 million in annual technology spend",
+            "Accountable for a PCI-complaint Cardholder Data Environment (CDE) platform, audited annually against the industry’s strictest security standards"
           ]
         },
         {
@@ -26,11 +26,11 @@
           "location": "Charlotte, N.C.",
           "tenure": "August 2021 - September 2022",
           "summary": [
-            "Leader of leaders, responsible for organizational design, staffing and project delivery across software, data, and platform engineering teams (up to 25)",
-            "Strategic partner to cross-functional leaders, internal & external stakeholders",
-            "Set strategy, investment and alignment across several workstreams, anticipating needs 6-24 months out",
-            "Accountable for more than a dozen consumer-facing web applications and four web-based internal marketing products that serve more than 3 million customers each month",
-            "Responsible for the data lifecycle of multiple performance marketing technologies, including Google, Meta, display, and numerous other search and social media platforms"
+            "Leader of leaders, responsible for organizational design, staffing and project delivery across multiple software, data, and platform engineering teams",
+            "Set strategy, investment, and created alignment across several cross-function workstreams, anticipating needs 6-24 months out",
+            "Accountable for more than a dozen consumer-facing web applications and four web-based internal marketing products that serve more than 10 million customers each month",
+            "Instrumented KPI tracking to drive 30% improvement in web page vitals",
+            "Responsible for the data lifecycle of performance marketing technologies, including Google, Meta, and numerous other paid and display media platforms"
           ]
         },
         {
@@ -42,20 +42,19 @@
             "Strategic technical leader, managing the project lifecycle, resource allocation and product architecture across a full-stack software engineering team",
             "Managed and mentored up to 10 direct reports, providing ongoing feedback, performance reviews, and skill and career coaching",
             "Primary technical liaison, translating business and client requirements to project plans and tickets using Jira and agile methodologies",
-            "Accountable for multiple performance marketing web applications managed  agency-style on behalf of some of the world’s largest brands"
+            "Accountable for multiple performance marketing web applications managed  agency-style on behalf of some of the US’s largest brands"
           ]
         },
         {
-          "title": "Senior Front-End Developer",
+          "title": "Senior Front-End Developer — Team Lead",
           "company": "Red Ventures",
           "location": "Charlotte, N.C.",
           "tenure": "March 2018 - March 2019",
           "summary": [
-            "Led a small team of front-end developers responsible for maintaining and quickly iterating on the client-facing portion of multiple websites and web applications",
+            "Directly managed a team of five front-end engineers responsible for maintaining and quickly iterating on the client-facing portion of multiple websites and web applications on behalf of agency clients",
+            "Created tools and assets to enable rapid A/B testing and manage marketing platform data feedback loops",
             "Responsible for high-level architectural decisions for the sites my team owns as well helping to maintaining coding standards across the organization",
-            "Working with business and creative teams to scope projects and delegate tasks for the front-end",
-            "Directly managing a four-person front-end team, which includes task check-ins as well as long-term skills and professional development",
-            "Interviewing potential candidates for front-end openings across Red Ventures"
+            "Partnered with product owners and creative teams to estimate, scope projects and assign tasks using Jira and Agile methodologies"
           ]
         },
         {
@@ -64,10 +63,9 @@
           "location": "Charlotte, N.C.",
           "tenure": "March 2017 - March 2018",
           "summary": [
-            "Collaborated with strategic thinkers and creative types to steward digital brands for partners across the web, and across the world",
-            "Built and manged multiple domains in a fast-pace project lifecycle",
-            "Developed both responsive and highly optimized web experiences using semantic HTML and BEM-styled SCSS",
-            "Wrote extensible JS for the client and for Gulp/Node tasks to improve workflow and the deploy processes"
+            "Built and manged multiple web applications in fast-paced project lifecycles",
+            "Developed fully responsive and highly optimized web experiences with semantic HTML and SEO optimization",
+            "Highly proficent in JavaScript, across vanilla client JS, frameworks (React, Vue), and Node/NPM"
           ]
         },
         {
