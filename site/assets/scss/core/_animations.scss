@@ -1,3 +1,15 @@
+@keyframes fadeIn {
+  0% {
+    filter: blur(5px);
+    opacity: 0;
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
 @keyframes point {
   5%  {
     left: -10px;
@@ -10,5 +22,25 @@
   95% {
     left: 7px;
     opacity: 0;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-15%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

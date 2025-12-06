@@ -19,6 +19,9 @@
     line-height: 1.3em;
 
     @include breakpoint(xl) {
+      animation-name: fadeIn, slideLeft;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
       left: 35vw;
       max-width: 750px;
       position: absolute;
@@ -68,15 +71,23 @@
 
   &__ted {
     @include font('Montserrat', 50vw, 800);
+    animation-name: fadeIn, slideUp;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
     color: $color-yellow;
     line-height: 1;
     text-align: center;
     user-select: none;
 
     @include breakpoint(lg) {
-      color: darken($color-yellow, 15%);
-      font-size: 64vw;
+      $yellow-accent: darken($color-yellow, 15%);
+      background-clip: text;
+      background-image: repeating-radial-gradient(circle at 40% 20%, $yellow-accent, $yellow-accent 3px, transparent 3px, transparent 6px);
+      color: $yellow-accent;
+      font-size: 62vw;
       margin-left: -10vw;
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
     }
 
     @include breakpoint(lg down) {
