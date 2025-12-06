@@ -8,6 +8,16 @@
   }
 }
 
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes slideUp {
   0% {
     transform: translateY(20%);
@@ -35,7 +45,7 @@
   padding-top: 50px;
 
   &__bio {
-    animation-name: fadeIn, slideUp;
+    animation-name: fadeIn, slideLeft;
     animation-duration: 2s;
     animation-iteration-count: 1;
     font-size: 18px;
@@ -91,6 +101,9 @@
 
   &__ted {
     @include font('Montserrat', 50vw, 800);
+    animation-name: fadeIn, slideUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
     color: $color-yellow;
     line-height: 1;
     text-align: center;
