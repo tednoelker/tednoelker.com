@@ -82,10 +82,11 @@
     @include breakpoint(lg) {
       $yellow-accent: darken($color-yellow, 15%);
       background-clip: text;
-      background-image: repeating-radial-gradient(circle at 40% 20%, $yellow-accent, $yellow-accent 2px, transparent 2px, transparent 4px);
+      background-image: repeating-radial-gradient(circle at 40% 20%, $yellow-accent, $yellow-accent 3px, transparent 3px, transparent 6px);
       color: $yellow-accent;
       font-size: 62vw;
       margin-left: -10vw;
+      -webkit-text-fill-color: transparent;
       text-fill-color: transparent;
     }
 
