@@ -1,3 +1,11 @@
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-new(root) {
+  animation: 500ms fadeIn reverse;
+}
+
 body {
   @include font('Helvetica', 16px, 400);
   background-color: $color-black;
