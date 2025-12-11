@@ -1,12 +1,3 @@
-@view-transition {
-  navigation: auto;
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 1s;
-}
-
 body {
   @include font('Helvetica', 16px, 400);
   background-color: $color-black;
