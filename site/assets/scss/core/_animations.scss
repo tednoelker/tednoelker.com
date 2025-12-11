@@ -27,11 +27,11 @@
 
 @keyframes slideLeft {
   0% {
-    transform: translateX(-15vw);
+    transform: translateX(-15vw) scale(0.8);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
