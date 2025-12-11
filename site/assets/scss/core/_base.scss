@@ -2,6 +2,14 @@
   navigation: auto;
 }
 
+::view-transition-old(content) {
+  animation: fadeIn 1s reverse;
+}
+
+::view-transition-new(content) {
+  animation: fadeIn 1s forwards;
+}
+
 ::view-transition-new(root) {
   animation-direction: reverse;
   animation-duration: 1s;
@@ -23,6 +31,7 @@ main {
   padding-bottom: 50px;
   position: relative;
   transition: transform 400ms;
+  view-transition-name: content;
   z-index: 2;
 
   @include breakpoint(lg down) {
