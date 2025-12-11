@@ -25,6 +25,7 @@
 <link rel="manifest" href="<%= meta.root + meta.path %>/site.webmanifest">
 <link rel="mask-icon" href="<%= meta.root + meta.path %>/safari-pinned-tab.svg" color="<%= meta.color %>">
 
-<style>body { opacity: 0; }</style>
+<style>body { opacity: 0; } @view-transition { navigation: auto; } ::view-transition-group(root) { animation-duration: 1s; }</style>
+
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:800" as="style" onload="this.rel='stylesheet'" crossorigin>
 <link rel="preload" href="/assets/css/global.css" as="style" onload="this.rel='stylesheet'">
