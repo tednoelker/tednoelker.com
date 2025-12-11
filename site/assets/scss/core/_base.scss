@@ -3,7 +3,9 @@
 }
 
 ::view-transition-new(root) {
-  animation: 500ms fadeIn reverse;
+  animation-direction: reverse;
+  animation-duration: 1s;
+  animation-name: fadeIn;
 }
 
 body {
