@@ -3,17 +3,11 @@
 }
 
 ::view-transition-old(content) {
-  animation: fadeIn 1s reverse;
+  animation: fadeIn 2s reverse;
 }
 
 ::view-transition-new(content) {
-  animation: fadeIn 1s forwards;
-}
-
-::view-transition-new(root) {
-  animation-direction: reverse;
-  animation-duration: 1s;
-  animation-name: fadeIn;
+  animation: fadeIn 2s forwards;
 }
 
 body {
